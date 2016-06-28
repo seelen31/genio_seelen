@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D3D3D3</color>
+    <color name="colorPrimaryDark">@android:color/darker_gray</color>
+    <color name="colorAccent">#009788</color>
+    <color name="backgroundColor">#EDEDED</color>
+    <color name="sectionLabelsColor">#3CA596</color>
+    <color name="iconsColor">#36A998</color>
+    <color name="settingsDataLabelsColor">#787878</color>
+    <color name="seekBarTextColor">#FFFDFF</color>
+    <color name="displaySettingsSubLabelsColor">#9D9D9D</color>
+    <color name="settingsTitleColor">#3E3E3E</color>
+    <color name="navigationSectionColor">#FAFAFA</color>
+    <color name="innerSeekBarColor">#ADADAD</color>
+    <color name="sectionborderColor">#C7C7C7</color>
+    <color name="buttonSelectionColor">#DBDBDB</color>
+
+    <color name="newMiniBackgroundColor">#101010</color>
+    <color name="newBackgroundColor">#1B1B1B</color>
+    <color name="newTextColor">#FFFFFF</color>
+    <color name="newLabelColor">#757575</color>
+    <color name="newColorAccent">#8A0000</color>
+    <color name="newIconsColor">#494949</color>
+    <color name="yellowAccent">#d4a424</color>
+</resources>

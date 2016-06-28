@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:background="@color/backgroundColor"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/mainLayout"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kazazoom.genioroasters.SettingsScreen"
+    tools:showIn="@layout/activity_settings_screen">
+
+    <!--Roast Setup-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settingsicon2"/>
+
+        <TextView
+            android:id="@+id/roastSetupTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sectionLabelsColor"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:text="Roast Setup"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@drawable/settingssectionshape"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+
+        <TextView
+            android:id="@+id/primeTemperatureMainLabel"
+            android:layout_width="wrap_content"
+            android:textColor="@color/settingsDataLabelsColor"
+            android:layout_height="wrap_content"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Prime Temperature"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="-20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/primeTemperatureTextbox"
+                    android:layout_width="200dp"
+                    android:textSize="40sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/displaySettingsSubLabelsColor"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/primeTemperatureUnitLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="°"/>
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/savePrimeTemperatureButton"
+                android:background="@drawable/screenbuttonshape"
+                android:textColor="@color/navigationSectionColor"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Save"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rateofRiseMainLabel"
+            android:layout_width="wrap_content"
+            android:paddingLeft="165dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/settingsDataLabelsColor"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rate of Rise"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:paddingRight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/s10"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rateofrisebuttonshape"
+                android:text="10 S"/>
+            <Button
+                android:id="@+id/s15"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rateofrisebuttonshape"
+                android:text="15 S"/>
+            <Button
+                android:id="@+id/s20"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rateofrisebuttonshape"
+                android:text="20 S"/>
+            <Button
+                android:id="@+id/s30"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rateofrisebuttonshape"
+                android:layout_height="wrap_content"
+                android:text="30 S"/>
+            <Button
+                android:id="@+id/s60"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rateofrisebuttonshape"
+                android:layout_height="wrap_content"
+                android:text="60 S"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settingsicon3"/>
+
+        <TextView
+            android:id="@+id/motorSetupTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/sectionLabelsColor"
+            android:text="Motor Setup"/>
+
+    </LinearLayout>
+
+    <!--Motor Setup-->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/settingssectionshape"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <TextView
+            android:id="@+id/drumSpeedMainLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/settingsDataLabelsColor"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Drum Speed"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/drumSpeedMinLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Min/10"
+                    />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/drumSpeedMinSeekbar"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:max="80"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min" />
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="-20dp"
+                android:gravity="center"
+                android:id="@+id/drumSpeedMaxLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Max/70"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/drumSpeedMaxSeekbar"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:max="80"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/fanSpeedMainLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="130dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/settingsDataLabelsColor"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Fan Speed"/>
+
+        <LinearLayout
+            android:paddingRight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/fanSpeedMinLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="-10"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/fanSpeedMinSeekbar"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:max="80"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="-20dp"
+                android:gravity="center"
+                android:progress="10"
+                android:id="@+id/fanSpeedMaxLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/fanSpeedMaxSeekbar"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:max="80"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--Display Setup-->
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="250dp">
+
+          <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="-60dp"
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/settingsicon4"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/displaySetupLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/sectionLabelsColor"
+                    android:text="Display Setup"/>
+
+            <TextView
+                android:id="@+id/temperatureMainLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/settingsDataLabelsColor"
+                android:text="Temperature"/>
+
+            <RadioGroup
+                android:id="@+id/temperatureRadioButtonsGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/temperatureCelciusRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/displaySettingsSubLabelsColor"
+                    android:layout_marginTop="5dp"
+                    android:text="Celcius °C"/>
+
+                <RadioButton
+                    android:id="@+id/temperatureFahrenheitRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/displaySettingsSubLabelsColor"
+                    android:text="Fahrenheit °F"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="400dp"
+            android:src="@drawable/settingsicon5"/>
+
+        <LinearLayout
+            android:paddingRight="80dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/networkSetupLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/sectionLabelsColor"
+                    android:text="Network"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ethernetMainLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/settingsDataLabelsColor"
+                    android:layout_marginTop="20dp"
+                    android:text="Ethernet"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="275dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ethernetDhcpLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/displaySettingsSubLabelsColor"
+                        android:text="DHCP"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/ethernetIsDhcpCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ethernetIpLabel"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/displaySettingsSubLabelsColor"
+                    android:text="IP"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/firstEthernetIpTextbox"
+                            android:inputType="number"
+                            android:layout_marginLeft="55dp"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+
+                        <EditText
+                            android:id="@+id/secondEthernetIpTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+                        <EditText
+                            android:id="@+id/thirdEthernetIpTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+                        <EditText
+                            android:id="@+id/fourthEthernetIpTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:id="@+id/saveIpSettingsButton"
+                        android:background="@drawable/screenbuttonshape"
+                        android:layout_width="100dp"
+                        android:textColor="@color/navigationSectionColor"
+                        android:layout_height="50dp"
+                        android:text="Save"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ethernetGatewayLabel"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/displaySettingsSubLabelsColor"
+                    android:text="Gateway"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/firstEthernetGatewayTextbox"
+                            android:inputType="number"
+                            android:layout_marginLeft="13dp"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+
+                        <EditText
+                            android:id="@+id/secondEthernetGatewayTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+                        <EditText
+                            android:id="@+id/thirdEthernetGatewayTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            />
+
+                        <EditText
+                            android:id="@+id/fourthEthernetGatewayTextbox"
+                            android:inputType="number"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:id="@+id/saveGatewaySettingsButton"
+                        android:textColor="@color/navigationSectionColor"
+                        android:layout_width="100dp"
+                        android:background="@drawable/screenbuttonshape"
+                        android:layout_height="50dp"
+                        android:text="Save"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

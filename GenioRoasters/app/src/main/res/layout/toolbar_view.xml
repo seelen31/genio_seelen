@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/homeNavigationButton"
+        android:layout_width="427dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/settingsTitleColor"
+        android:background="@drawable/defaulttoolbarbuttonshape"
+        android:text="Home"
+        />
+
+    <Button
+        android:id="@+id/settingsNavigationButton"
+        android:layout_width="427dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/settingsTitleColor"
+        android:background="@drawable/toolbarbuttonshape"
+        android:text="Settings"/>
+
+    <Button
+        android:id="@+id/reportsButton"
+        android:layout_width="427dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbarbuttonshape"
+        android:text="Reports"/>
+
+</LinearLayout>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dashBoardID"
+    android:background="@color/newBackgroundColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kazazoom.genioroasters.DashBoardActivity"
+    tools:showIn="@layout/activity_dash_board">
+
+    <!--Main layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="16dp"
+        android:background="@color/newBackgroundColor">
+
+        <!--first column-->
+        <LinearLayout
+            android:layout_width="580dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--Bean temperature-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="0dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-73dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@color/newColorAccent"
+                    android:textSize="20sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="BEAN. TEMP"/>
+
+                <TextView
+                    android:id="@+id/beanTemperatureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="50dp"
+                    android:textSize="100sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="247.74"/>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/beanDegreeSign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="100sp"
+                            android:textColor="@color/newTextColor"
+                            android:text="°"/>
+
+                        <TextView
+                            android:id="@+id/beanTemperatureUnitLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-60dp"
+                            android:textColor="@color/newTextColor"
+                            android:text="C"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/beanTemperatureSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="80sp"
+                        android:textColor="@color/newColorAccent"
+                        android:text="|"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/beanTemperatureRorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/newTextColor"
+                        android:text="70.0"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/newLabelColor"
+                        android:text="RoR"/>
+
+                    <TextView
+                        android:id="@+id/beanRorUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/newLabelColor"
+                        android:text="30"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!--Environment Temp-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-73dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@color/newColorAccent"
+                    android:textSize="20sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="ENVIR. TEMP"/>
+
+                <TextView
+                    android:id="@+id/environmentTemperatureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="50dp"
+                    android:textSize="100sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="247.74"/>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/environmentDegreeSign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="100sp"
+                            android:textColor="@color/newTextColor"
+                            android:text="°"/>
+
+                        <TextView
+                            android:id="@+id/environmentTemperatureUnitLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-60dp"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/newTextColor"
+                            android:text="C"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/environmentTemperatureSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="80sp"
+                        android:textColor="@color/newColorAccent"
+                        android:text="|"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/environmentTemperatureRorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/newTextColor"
+                        android:text="9.6"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/newLabelColor"
+                            android:text="RoR"/>
+
+
+                        <TextView
+                            android:id="@+id/environmentRorUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/newLabelColor"
+                            android:text="30"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+            <!--Roast time-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-73dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@color/newColorAccent"
+                    android:textSize="20sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="ROAST TIME"/>
+
+                <TextView
+                    android:id="@+id/roastTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_gravity="center"
+                    android:textSize="180sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/newTextColor"
+                    android:text="--:--"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <!--second column-->
+        <LinearLayout
+            android:layout_width="580dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <!--Turn point-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:paddingRight="40dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-34dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/newColorAccent"
+                    android:textColor="@color/newTextColor"
+                    android:text="TURN POINT"/>
+
+                <TextView
+                    android:id="@+id/turnPointTemperatureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="85dp"
+                    android:textSize="70sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="147 °"/>
+
+                <TextView
+                    android:id="@+id/turnPointSeparator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="50dp"
+                    android:textSize="60sp"
+                    android:textColor="@color/newColorAccent"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/turnPointTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="70sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="47:24"/>
+
+
+            </FrameLayout>
+
+            <!--First Crack-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="40dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-34dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/newColorAccent"
+                    android:textColor="@color/newTextColor"
+                    android:text="DEVELOPMENT"/>
+
+
+                <TextView
+                    android:id="@+id/developmentPercentageValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="85dp"
+                    android:textSize="70sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="--%"/>
+
+                <TextView
+                    android:id="@+id/developmentSeparator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:paddingLeft="50dp"
+                    android:textSize="60sp"
+                    android:textColor="@color/newColorAccent"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/developmentTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="70sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="--:--"/>
+
+
+            </FrameLayout>
+
+            <!--first crack-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="40dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="-90"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="-54dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/newColorAccent"
+                    android:textColor="@color/newTextColor"
+                    android:text="FIRST CRACK"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-30dp"
+                android:paddingLeft="85dp">
+
+
+                <TextView
+                    android:id="@+id/firstCrackTemperatureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="70sp"
+
+                    android:textColor="@color/newTextColor"
+                    android:text="--- °"/>
+
+                <TextView
+                    android:id="@+id/firstCrackSeparator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-20dp"
+                    android:textSize="60sp"
+                    android:textColor="@color/newColorAccent"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/firstCrackTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="70sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="--:--"/>
+
+
+            </FrameLayout>
+
+
+                <Button
+                    android:id="@+id/firstCrackButton"
+                    android:layout_width="445dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/newColorAccent"
+                    android:textSize="25sp"
+                    android:textColor="@color/newTextColor"
+                    android:text="FIRST CRACK"/>
+
+            </FrameLayout>
+
+
+
+            <!--Controls-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:paddingTop="0dp"
+                android:paddingRight="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/newMiniBackgroundColor">
+
+                <!--GAS-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:layout_gravity="left|center">
+
+                    <TextView
+                        android:id="@+id/gasLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:rotation="-90"
+                        android:textColor="@color/newLabelColor"
+                        android:text="GAS (%)"/>
+
+                    <TextView
+                        android:id="@+id/gasVolumeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="55dp"
+                        android:textSize="70sp"
+                        android:textColor="@color/newTextColor"
+                        android:text="--"/>
+
+                    <TextView
+                        android:id="@+id/gasSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingLeft="160dp"
+                        android:textSize="60sp"
+                        android:textColor="@color/newColorAccent"
+                        android:text="|"/>
+
+                </FrameLayout>
+
+                <!--DRUM-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="80dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/drumLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:rotation="-90"
+                        android:textColor="@color/newLabelColor"
+                        android:text="DRUM (Hz)"/>
+
+                    <TextView
+                        android:id="@+id/drumSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="60dp"
+                        android:textSize="70sp"
+                        android:textColor="@color/newTextColor"
+                        android:text="--"/>
+
+                    <TextView
+                        android:id="@+id/drumSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingLeft="165dp"
+                        android:textSize="60sp"
+                        android:textColor="@color/newColorAccent"
+                        android:text="|"/>
+
+                </FrameLayout>
+
+                <!--FAN-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-15dp"
+                    android:layout_gravity="right|center">
+
+
+                    <TextView
+                        android:id="@+id/fanLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:rotation="-90"
+                        android:textColor="@color/newLabelColor"
+                        android:text="FAN (Hz)"/>
+
+                    <TextView
+                        android:id="@+id/fanSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="55dp"
+                        android:textSize="70sp"
+                        android:textColor="@color/newTextColor"
+                        android:text="--"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/appConnectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/newColorAccent"
+        android:textSize="20sp"
+        android:textColor="@color/newTextColor"
+        android:text="Message Bar"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kazazoom.genioroasters.MainScreen">
+
+    <TextView
+        android:layout_gravity="top|center"
+        android:id="@+id/receivedText"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am received text"
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Roast Data"
+            android:id="@+id/RoastDatabutton"
+            android:layout_below="@+id/offButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off"
+            android:id="@+id/offButton"
+            android:layout_below="@+id/receivedText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On"
+            android:id="@+id/onButton"
+            android:layout_alignBottom="@+id/offButton"
+            android:layout_toRightOf="@+id/offButton"
+            android:layout_toEndOf="@+id/offButton" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings Button"
+            android:layout_below="@+id/setEthernetGateway"
+            android:layout_alignLeft="@+id/setEthernetGateway"
+            android:layout_alignStart="@+id/setEthernetGateway" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
